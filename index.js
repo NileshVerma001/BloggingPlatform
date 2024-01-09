@@ -25,7 +25,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: "https://myblogbynilesh.onrender.com" }));
+app.use(cors({ credentials: true, origin: "https://myblog-by-nilesh.netlify.app" }));
 app.use('/uploads',express.static(__dirname+'/uploads'));
 
 mongoose.connect(
